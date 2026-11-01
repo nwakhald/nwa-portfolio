@@ -12,7 +12,7 @@ Object.defineProperty(globalThis, 'navigator', { value: dom.window.navigator, co
 dom.window.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
 dom.window.HTMLDialogElement.prototype.close = function () { this.open = false; };
 const { createRoot } = await import('react-dom/client');
-const { default: App, STORAGE_KEY } = await import('../src/App.jsx');
+const { default: App } = await import('../src/App.jsx');
 const container = document.getElementById('root');
 let root = createRoot(container);
 const click = async (element) => { assert.ok(element, 'Expected clickable element'); await act(async () => element.click()); };
@@ -67,24 +67,8 @@ try {
   await click(document.querySelector('[aria-label="Close image viewer"]'));
   console.log('✓ Screenshot tabs, keyboard navigation and image viewer');
 
-  await click(button('Edit portfolio'));
-  await field('field-name', 'Nwa React Test');
-  await field('field-salaryMax', '900');
-  await act(async () => document.querySelector('dialog form').dispatchEvent(new dom.window.Event('submit', { bubbles: true, cancelable: true })));
-  assert.match(document.querySelector('[role="alert"]').textContent, /maximum salary/);
-  await field('field-salaryMax', '1600');
-  await act(async () => document.querySelector('dialog form').dispatchEvent(new dom.window.Event('submit', { bubbles: true, cancelable: true })));
-  assert.equal(document.querySelector('dialog'), null);
-  assert.equal(JSON.parse(localStorage.getItem(STORAGE_KEY)).name, 'Nwa React Test');
-  await act(async () => root.unmount());
-  root = createRoot(container);
-  await act(async () => root.render(<App />));
-  assert.equal(document.querySelector('.identity strong').textContent, 'Nwa React Test');
-  await click(button('Edit portfolio'));
-  await click(button('Restore website details'));
-  assert.equal(document.querySelector('.identity strong').textContent, 'Nwa Khalid Kareem');
-  assert.equal(localStorage.getItem(STORAGE_KEY), null);
-  console.log('✓ Editor validation, saving, reload persistence and restore');
+  assert.equal(document.querySelector('.edit-trigger'), null);
+  console.log('✓ Editor button successfully removed for visitors');
 
   const details = [...document.querySelectorAll('#project-grid details')];
   details[0].open = true;
