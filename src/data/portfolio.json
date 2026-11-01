@@ -1,0 +1,52 @@
+{
+  "name": "Nwa Khalid Kareem",
+  "role": "Senior Software Developer and Digital Marketer",
+  "summary": "My projects include websites, mobile apps, AI tools and management systems.",
+  "location": "Sulaymani, Iraq",
+  "email": "nwaakhald@gmail.com",
+  "linkedin": "",
+  "github": "https://github.com/nwakhald",
+  "salaryMin": "1000",
+  "salaryMax": "1600",
+  "currency": "USD",
+  "period": "Per month",
+  "engagement": "12-month development contract",
+  "availability": "",
+  "salaryNote": "The final amount depends on the agreed scope and working arrangements. Work-related expenses and support after the 12-month development period are negotiated separately.",
+  "projects": [
+    {
+      "title": "BritishLightUp",
+      "category": "My business · E-commerce & AI",
+      "description": "My UK lighting business, launched in September 2026. Includes an online store, admin dashboard and AI tools.",
+      "challenge": "Make lighting products easy to find and manage.",
+      "solution": "Product search, sales reports, stock tools, AI recommendations and product-description drafting.",
+      "role": "Business owner; website, dashboard and AI feature development.",
+      "tech": "MERN stack: MongoDB, Express.js, React and Node.js. Gemini AI for product descriptions.",
+      "result": "Shopping, store management and AI assistance in one platform.",
+      "evidence": "Screenshots show the main features. Sales figures shown are not verified performance results."
+    },
+    {
+      "title": "Online NCC — Mobile App & Management Systems",
+      "category": "Mobile app & internal systems",
+      "description": "Users can recharge their accounts, make payments and manage subscriptions directly in the app.",
+      "challenge": "Let users recharge, pay and manage their service themselves.",
+      "solution": "Self-service recharge and payments, account details, subscriptions, support requests, languages and themes.",
+      "role": "Mobile app and management-system development.",
+      "tech": "",
+      "result": "Self-service recharge, payments and account management.",
+      "evidence": "Screenshots show the app. The account phone number is hidden. The home screen includes a connection-error state."
+    },
+    {
+      "title": "Decor Planet Supply",
+      "category": "E-commerce · WordPress & digital marketing",
+      "description": "An e-commerce project covering product design, video editing, SEO and WordPress development.",
+      "challenge": "",
+      "solution": "Product design, video editing (montage), search optimisation and WordPress website development.",
+      "role": "Product design, montage, SEO and WordPress development.",
+      "tech": "WordPress",
+      "result": "Product visuals, edited videos, SEO work and website development.",
+      "evidence": ""
+    }
+  ],
+  "phone": "+964 774 091 1169"
+}

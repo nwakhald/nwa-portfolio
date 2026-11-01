@@ -1,0 +1,66 @@
+{
+  "assets/britishlightup-ai-admin-form.png": {
+    "original": "assets/britishlightup-ai-admin-form.png",
+    "file": "assets/optimized/britishlightup-ai-admin-form.webp",
+    "preview": "assets/optimized/britishlightup-ai-admin-form.webp",
+    "srcset": "assets/optimized/britishlightup-ai-admin-form-480.webp 480w, assets/optimized/britishlightup-ai-admin-form.webp 1242w",
+    "width": 1242,
+    "height": 857
+  },
+  "assets/britishlightup-catalogue.png": {
+    "original": "assets/britishlightup-catalogue.png",
+    "file": "assets/optimized/britishlightup-catalogue.webp",
+    "preview": "assets/optimized/britishlightup-catalogue-960.webp",
+    "srcset": "assets/optimized/britishlightup-catalogue-480.webp 480w, assets/optimized/britishlightup-catalogue-960.webp 960w, assets/optimized/britishlightup-catalogue.webp 1917w",
+    "width": 1917,
+    "height": 876
+  },
+  "assets/britishlightup-dashboard.png": {
+    "original": "assets/britishlightup-dashboard.png",
+    "file": "assets/optimized/britishlightup-dashboard.webp",
+    "preview": "assets/optimized/britishlightup-dashboard-960.webp",
+    "srcset": "assets/optimized/britishlightup-dashboard-480.webp 480w, assets/optimized/britishlightup-dashboard-960.webp 960w, assets/optimized/britishlightup-dashboard.webp 1917w",
+    "width": 1917,
+    "height": 882
+  },
+  "assets/britishlightup-google-search.jpeg": {
+    "original": "assets/britishlightup-google-search.jpeg",
+    "file": "assets/britishlightup-google-search.jpeg",
+    "preview": "assets/optimized/britishlightup-google-search-960.webp",
+    "srcset": "assets/optimized/britishlightup-google-search-480.webp 480w, assets/optimized/britishlightup-google-search-960.webp 960w, assets/britishlightup-google-search.jpeg 1555w",
+    "width": 1555,
+    "height": 865
+  },
+  "assets/britishlightup-storefront.png": {
+    "original": "assets/britishlightup-storefront.png",
+    "file": "assets/optimized/britishlightup-storefront.webp",
+    "preview": "assets/optimized/britishlightup-storefront-960.webp",
+    "srcset": "assets/optimized/britishlightup-storefront-480.webp 480w, assets/optimized/britishlightup-storefront-960.webp 960w, assets/optimized/britishlightup-storefront.webp 1915w",
+    "width": 1915,
+    "height": 882
+  },
+  "assets/online-ncc-account-redacted.png": {
+    "original": "assets/online-ncc-account-redacted.png",
+    "file": "assets/optimized/online-ncc-account-redacted.webp",
+    "preview": "assets/optimized/online-ncc-account-redacted.webp",
+    "srcset": "assets/optimized/online-ncc-account-redacted-480.webp 480w, assets/optimized/online-ncc-account-redacted.webp 852w",
+    "width": 852,
+    "height": 1846
+  },
+  "assets/online-ncc-home.jpeg": {
+    "original": "assets/online-ncc-home.jpeg",
+    "file": "assets/online-ncc-home.jpeg",
+    "preview": "assets/online-ncc-home.jpeg",
+    "srcset": "assets/online-ncc-home.jpeg 591w",
+    "width": 591,
+    "height": 1280
+  },
+  "assets/online-ncc-menu.jpeg": {
+    "original": "assets/online-ncc-menu.jpeg",
+    "file": "assets/online-ncc-menu.jpeg",
+    "preview": "assets/online-ncc-menu.jpeg",
+    "srcset": "assets/online-ncc-menu.jpeg 591w",
+    "width": 591,
+    "height": 1280
+  }
+}

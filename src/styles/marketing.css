@@ -1,0 +1,24 @@
+/* Additional skills and the user-supplied SEO example. */
+.marketing-section{padding-top:0}
+.marketing-layout{display:grid;grid-template-columns:1.05fr 1fr;gap:24px;align-items:stretch}
+.marketing-skills{display:grid;grid-template-columns:1fr;gap:16px}
+.marketing-skill{background:var(--white);border:1px solid var(--line);border-radius:13px;padding:22px;min-width:0}
+.marketing-skill .mono{color:#6b7d60;font-size:9px;letter-spacing:1.2px}
+.marketing-skill h3{font-size:20px;letter-spacing:-.5px;line-height:1.25;margin:14px 0 10px}
+.marketing-skill p{font-size:13px;line-height:1.7;margin:0}
+.marketing-support{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}
+.marketing-support p{margin:0;font-size:9px;color:var(--muted)}
+.marketing-support ul{display:flex;gap:9px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.marketing-support li{font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:20px;color:var(--muted)}
+.marketing-example{margin:0;background:#edf1e6;border:1px solid var(--line);border-radius:13px;overflow:hidden;min-width:0}
+.marketing-image-link{display:block;background:#fff}
+.marketing-example img{display:block;width:100%;height:auto}
+.marketing-example figcaption{padding:22px 24px}
+.marketing-example figcaption .mono{color:#657953;font-size:9px;letter-spacing:1.2px}
+.marketing-example figcaption p{color:var(--ink);font-size:14px;margin:8px 0 9px}
+.marketing-example .text-link{font-size:12px}
+.marketing-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.marketing-layout{grid-template-columns:1fr}.marketing-skills{grid-template-columns:repeat(2,minmax(0,1fr))}.marketing-example{display:grid;grid-template-columns:1.2fr 1fr;align-items:center}.marketing-example figcaption{padding:20px}.marketing-skill h3{font-size:21px}}
+@media(max-width:580px){.marketing-skills{grid-template-columns:1fr;gap:12px}.marketing-skill{padding:18px}.marketing-skill h3{font-size:18px}.marketing-skill p{font-size:12px}.marketing-example{display:block}.marketing-example figcaption{padding:20px}}
+@media(max-width:360px){.marketing-skills{grid-template-columns:1fr}}
+@media print{.marketing-section{break-inside:avoid}.marketing-layout{grid-template-columns:1.1fr 1fr;gap:16px}.marketing-skills{grid-template-columns:1fr;gap:10px}.marketing-skill{padding:12px}.marketing-skill h3{font-size:12pt;margin:9px 0 6px}.marketing-skill p{font-size:9pt}.marketing-example{display:block}.marketing-example figcaption{padding:14px}.marketing-example .text-link{display:none}}
