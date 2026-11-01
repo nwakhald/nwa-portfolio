@@ -3,7 +3,7 @@ import { Modal } from './Images.jsx';
 
 const profileFields = [
   ['name', 'Your name'], ['role', 'Professional title'], ['location', 'Location'],
-  ['email', 'Contact email', 'email'], ['phone', 'Phone number', 'tel'],
+  ['email', 'Contact email', 'email'], ['phone', 'WhatsApp number', 'tel'],
   ['summary', 'Professional summary', 'textarea'],
   ['linkedin', 'LinkedIn URL', 'url'], ['github', 'GitHub URL', 'url'],
 ];

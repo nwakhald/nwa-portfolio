@@ -66,12 +66,13 @@ export function Salary({ profile }) {
 }
 
 export function Contact({ profile }) {
-  const phone = String(profile.phone).replace(/[^\d+]/g, '');
+  const digits = String(profile.phone || '').replace(/\D/g, '');
+  const waUrl = digits ? `https://wa.me/${digits}` : '';
   return <section className="wrap contact" aria-labelledby="contact-title">
     <div><h2 id="contact-title">Let’s talk.</h2><p>Tell me about your project.</p></div>
     <div className="contact-links">
       {profile.email && <a className="btn dark" href={'mailto:' + profile.email}>{profile.email} ↗</a>}
-      {/^[+]?\d{7,15}$/.test(phone) && <a href={'tel:' + phone}>{profile.phone}</a>}
+      {waUrl && <a href={waUrl} target="_blank" rel="noopener noreferrer">WhatsApp: {profile.phone} ↗</a>}
       {[['linkedin', 'LinkedIn'], ['github', 'GitHub']].map(([key, label]) => safeWebUrl(profile[key]) && <a key={key} href={safeWebUrl(profile[key])} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}
     </div>
   </section>;

@@ -32,7 +32,7 @@ try {
   assert.equal(document.querySelector('.salary-value').textContent, '$1,000 – $1,600');
   assert.match(document.querySelector('#salary').textContent, /Negotiable/);
   assert.match(document.querySelector('#salary').textContent, /\$12,000 – \$19,200/);
-  assert.equal(document.querySelector('a[href^="tel:"]').getAttribute('href'), 'tel:+9647740911169');
+  assert.equal(document.querySelector('a[href*="wa.me"]').getAttribute('href'), 'https://wa.me/9647740911169');
   console.log('✓ Profile, salary, contact links and section wording');
 
   assert.equal(document.querySelectorAll('.design-card').length, 6);
