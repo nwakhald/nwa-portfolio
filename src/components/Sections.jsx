@@ -65,6 +65,14 @@ export function Salary({ profile }) {
   </section>;
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style={{ flexShrink: 0 }}>
+      <path d="M12.004 0C5.372 0 0 5.372 0 12c0 2.115.55 4.102 1.517 5.835L.39 23.498l5.834-1.127A11.96 11.96 0 0 0 12.004 24c6.627 0 12-5.372 12-12s-5.373-12-12-12zm.006 21.84a9.83 9.83 0 0 1-5.016-1.373l-.36-.214-3.731.722.736-3.637-.234-.373A9.843 9.843 0 1 1 12.01 21.84zm5.394-7.375c-.296-.148-1.751-.864-2.022-.963-.271-.098-.469-.148-.667.148-.198.297-.768.963-.942 1.161-.173.198-.346.223-.642.074-.296-.148-1.25-.46-2.38-1.468-.881-.786-1.476-1.758-1.649-2.055-.173-.297-.019-.457.13-.605.134-.134.296-.346.444-.52.148-.173.198-.297.296-.494.099-.198.05-.371-.025-.52-.074-.148-.667-1.606-.914-2.2-.24-.58-.485-.501-.667-.51l-.57-.01c-.198 0-.52.074-.792.371-.272.297-1.04 1.015-1.04 2.476s1.065 2.871 1.213 3.07c.148.198 2.096 3.2 5.077 4.488.709.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.751-.715 1.998-1.405.247-.69.247-1.282.173-1.405-.074-.123-.272-.198-.568-.346z" />
+    </svg>
+  );
+}
+
 export function Contact({ profile }) {
   const digits = String(profile.phone || '').replace(/\D/g, '');
   const waUrl = digits ? `https://wa.me/${digits}` : '';
@@ -72,7 +80,15 @@ export function Contact({ profile }) {
     <div><h2 id="contact-title">Let’s talk.</h2><p>Tell me about your project.</p></div>
     <div className="contact-links">
       {profile.email && <a className="btn dark" href={'mailto:' + profile.email}>{profile.email} ↗</a>}
-      {waUrl && <a href={waUrl} target="_blank" rel="noopener noreferrer">WhatsApp: {profile.phone} ↗</a>}
+      {waUrl && (
+        <a className="btn dark" href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <WhatsAppIcon />
+            <span>WhatsApp</span>
+          </span>
+          <span className="arrow" aria-hidden="true">↗</span>
+        </a>
+      )}
       {[['linkedin', 'LinkedIn'], ['github', 'GitHub']].map(([key, label]) => safeWebUrl(profile[key]) && <a key={key} href={safeWebUrl(profile[key])} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}
     </div>
   </section>;
